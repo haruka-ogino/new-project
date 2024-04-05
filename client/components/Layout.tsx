@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom'
-import App from './App'
 import Parent from './Parent'
 
 export default function Layout() {
@@ -9,7 +8,6 @@ export default function Layout() {
         <h1>Fullstack Boilerplateee</h1>
       </header>
       <main>
-        <App />
         <Parent />
         <Outlet />
       </main>
