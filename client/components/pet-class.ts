@@ -11,9 +11,9 @@ class Pet {
     this.specie = specie
   }
 
-  greet(): void {
-    console.log(`<sniff> 
-    Hello, I'm ${this.name}. ${this.owner} is my owner and I am a ${this.age} old ${this.specie}`)
+  greet(): string {
+    return `*sniff sniff* 
+    Hello, I'm ${this.name}. ${this.owner} is my owner and I am a ${this.age} year old ${this.specie}.`
   }
 }
 
