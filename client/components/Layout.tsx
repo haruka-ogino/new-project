@@ -8,7 +8,7 @@ export default function Layout() {
         <h1>Fullstack Boilerplateee</h1>
       </header>
       <main>
-        <Parent />
+        {/* <Parent /> */}
         <Outlet />
       </main>
       <footer></footer>
