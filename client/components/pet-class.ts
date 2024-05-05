@@ -3,37 +3,41 @@ class Pet {
   private owner: string
   private age: number
   private specie: string
+  private speech: string
 
-  constructor(name: string, owner: string, age: number, specie: string) {
+  constructor(
+    name: string,
+    owner: string,
+    age: number,
+    specie: string,
+    speech: string,
+  ) {
     this.name = name
     this.owner = owner
     this.age = age
     this.specie = specie
+    this.speech = speech
   }
 
   greet(): string {
     return `*sniff sniff* 
     Hello, I'm ${this.name}. ${this.owner} is my owner and I am a ${this.age} year old ${this.specie}.`
   }
+
+  speak(): string {
+    return `${this.speech}`
+  }
 }
 
 class Dog extends Pet {
   constructor(name: string, owner: string, age: number) {
-    super(name, owner, age, 'pupper')
-  }
-
-  speak(): string {
-    return 'Woof woof!'
+    super(name, owner, age, 'pupper', 'woof')
   }
 }
 
 class Cat extends Pet {
   constructor(name: string, owner: string, age: number) {
-    super(name, owner, age, 'cat')
-  }
-
-  speak(): string {
-    return 'meoww'
+    super(name, owner, age, 'cat', 'meow')
   }
 }
 
