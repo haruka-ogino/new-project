@@ -1,4 +1,4 @@
-import { pet1, pet2, pet3 } from './pet-class'
+import { pet1, pet2, pet3, pet4 } from './pet-class'
 
 export default function Pets() {
   console.log(pet1.speak())
@@ -23,6 +23,11 @@ export default function Pets() {
           {pet3.greet()}
           <br />
           {pet3.speak()}
+        </li>
+        <li>
+          {pet4.greet()}
+          <br />
+          {pet4.speak()}
         </li>
       </ul>
     </>

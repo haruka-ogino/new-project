@@ -41,6 +41,13 @@ class Cat extends Pet {
   }
 }
 
+class Rabbit extends Pet {
+  constructor(name: string, owner: string, age: number) {
+    super(name, owner, age, 'bunny', 'squeak')
+  }
+}
+
 export const pet1: Dog = new Dog('Koda', 'Haruka', 1)
 export const pet2: Dog = new Dog('Autumn', 'Catherine', 0.4)
 export const pet3: Cat = new Cat('Theo', 'Amy', 5)
+export const pet4: Rabbit = new Rabbit('Bunny', 'Cae', 8)
