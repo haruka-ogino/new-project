@@ -1,6 +1,8 @@
 import { pet1, pet2, pet3, pet4 } from './pet-class'
 
 export default function Pets() {
+  // is it possible to do object oriented programming with a relational database? Where one table would hold the classes, another the class extensions, and another that holds the instances of these classes?
+  // explore the above
   return (
     <>
       <h2>PETS!</h2>
@@ -11,6 +13,11 @@ export default function Pets() {
           {pet1.speak()}
         </li>
         <li>
+          {pet4.greet()}
+          <br />
+          {pet4.speak()}
+        </li>
+        <li>
           {pet2.greet()}
           <br />
           {pet2.speak()}
@@ -19,11 +26,6 @@ export default function Pets() {
           {pet3.greet()}
           <br />
           {pet3.speak()}
-        </li>
-        <li>
-          {pet4.greet()}
-          <br />
-          {pet4.speak()}
         </li>
       </ul>
     </>

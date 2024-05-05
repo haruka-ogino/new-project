@@ -20,8 +20,14 @@ class Pet {
   }
 
   greet(): string {
+    let a: string
+    if (this.age === 8) {
+      a = 'an'
+    } else {
+      a = 'a'
+    }
     return `*sniff sniff* 
-    Hello, I'm ${this.name}. ${this.owner} is my owner and I am a ${this.age} year old ${this.specie}.`
+    Hello, I'm ${this.name}. ${this.owner} is my owner and I am ${a} ${this.age} year old ${this.specie}.`
   }
 
   speak(): string {
@@ -31,7 +37,7 @@ class Pet {
 
 class Dog extends Pet {
   constructor(name: string, owner: string, age: number) {
-    super(name, owner, age, 'pupper', 'woof')
+    super(name, owner, age, 'pup', 'woof')
   }
 }
 
@@ -50,4 +56,4 @@ class Rabbit extends Pet {
 export const pet1: Dog = new Dog('Koda', 'Haruka', 1)
 export const pet2: Dog = new Dog('Autumn', 'Catherine', 0.4)
 export const pet3: Cat = new Cat('Theo', 'Amy', 5)
-export const pet4: Rabbit = new Rabbit('Bunny', 'Cae', 8)
+export const pet4: Rabbit = new Rabbit('Bunny', 'Cae', 3)
